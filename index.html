@@ -2,25 +2,85 @@
 <html>
 <head>
     <title>Shaurya Adarsh Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial; margin: 40px; background:#f4f6f9;}
-        .card { background:white; padding:25px; border-radius:10px; max-width:800px; margin:auto; box-shadow:0 0 10px rgba(0,0,0,0.1);}
-        h1 { color:#333; }
-        a.button {
+        body {
+            margin:0;
+            font-family:'Poppins', sans-serif;
+            background:linear-gradient(135deg,#1f2937,#111827);
+            color:white;
+        }
+
+        .container{
+            max-width:900px;
+            margin:60px auto;
+            background:#111827;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 0 40px rgba(0,0,0,0.6);
+        }
+
+        h1{
+            font-size:40px;
+            margin-bottom:5px;
+        }
+
+        .subtitle{
+            color:#60a5fa;
+            font-weight:500;
+            margin-bottom:30px;
+        }
+
+        h2{
+            border-left:4px solid #3b82f6;
+            padding-left:10px;
+            margin-top:30px;
+        }
+
+        p, li{
+            color:#d1d5db;
+            line-height:1.7;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        .btn{
             display:inline-block;
-            padding:10px 18px;
-            background:#0077ff;
+            padding:12px 22px;
+            background:linear-gradient(90deg,#3b82f6,#06b6d4);
+            border-radius:8px;
             color:white;
             text-decoration:none;
-            border-radius:6px;
+            font-weight:500;
             margin-top:10px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-2px);
+            box-shadow:0 10px 25px rgba(59,130,246,0.4);
+        }
+
+        .links a{
+            color:#60a5fa;
+            margin-right:15px;
+            text-decoration:none;
+            font-weight:500;
+        }
+
+        .links a:hover{
+            text-decoration:underline;
         }
     </style>
 </head>
+
 <body>
-<div class="card">
+
+<div class="container">
     <h1>Shaurya Adarsh</h1>
-    <p><b>Backend Developer | Java | Spring Boot</b></p>
+    <div class="subtitle">Backend Developer • Java • Spring Boot</div>
 
     <h2>About Me</h2>
     <p>I build scalable backend systems using Spring Boot, PostgreSQL and REST APIs. Interested in backend engineering, system design and production-ready applications.</p>
@@ -33,13 +93,15 @@
     </ul>
 
     <h2>Resume</h2>
-    <a class="button" href="resume.pdf">Download Resume</a>
+    <a class="btn" href="resume.pdf">Download Resume</a>
 
     <h2>Links</h2>
-    <p>
-        <a href="https://github.com/shauryaadarsh" target="_blank">GitHub</a> |
+    <div class="links">
+        <a href="https://github.com/shauryaadarsh" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/shaurya-adarsh-4781a72a6/" target="_blank">LinkedIn</a>
-    </p>
+    </div>
+
 </div>
+
 </body>
 </html>
